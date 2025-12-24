@@ -1,0 +1,7 @@
+{
+  "name": "Lords 50",
+  "description": "A premium, end-to-end digital platform for luxury tailoring management, featuring hierarchy-based tracking, automated commission distribution, and customer real-time status updates.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
