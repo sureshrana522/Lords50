@@ -8,7 +8,7 @@ export enum UserRole {
   SUPER_MANAGER = 'SUPER_MANAGER',
   MANAGER = 'MANAGER',
   SHOWROOM = 'SHOWROOM',
-  BOOKING_MASTER = 'BOOKING_MASTER', // New Role Added
+  BOOKING_MASTER = 'BOOKING_MASTER',
   MEASUREMENT = 'MEASUREMENT',
   CUTTING = 'CUTTING',
   SHIRT_MAKER = 'SHIRT_MAKER',
@@ -80,6 +80,7 @@ export interface Order {
   clothDetail: ClothDetail;
   secretCode: string; // Secure Delivery Code
   timelineLogs: TimelineEvent[]; // Full tracking history
+  measurements?: any;
 }
 
 export interface Customer {

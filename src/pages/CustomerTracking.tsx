@@ -31,21 +31,8 @@ const CustomerTracking: React.FC = () => {
                 ]
              });
         } else {
-            // Fallback Mock if not found in local storage
-            setOrder({
-                billNo: billNo,
-                customerName: 'Valued Client',
-                category: 'Bespoke Suit',
-                status: OrderStatus.KAJ_BUTTON,
-                deliveryDate: '2025-06-25',
-                isUrgent: false,
-                steps: [
-                { name: 'Order Booked', done: true, date: '2025-06-10' },
-                { name: 'Measurement', done: true, date: '2025-06-10' },
-                { name: 'Production', done: true, date: '2025-06-12' },
-                { name: 'Ready for Delivery', done: false, date: null },
-                ]
-            });
+            alert("Order not found in system. Please check Bill Number.");
+            setOrder(null);
         }
       setSearching(false);
     }, 1500);

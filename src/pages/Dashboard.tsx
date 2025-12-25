@@ -47,8 +47,8 @@ const Dashboard: React.FC<DashboardProps> = ({ user }) => {
       customers: customers.length,
       todayBooking: todaysOrders.length,
       readyDelivery: ready.length,
-      workers: 12, // Mock active workers
-      materialStock: 85, // Mock percent
+      workers: 0, // Placeholder
+      materialStock: 0, // Placeholder
       
       // New Data Mapping
       uplineIncome: myWallet.upline_income || 0,
